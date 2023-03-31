@@ -5,10 +5,9 @@ services:
     privileged: true
     user: root
     ports:
-      - 8083:8080
+      - 8081:8080
       - 50003:50000
-    container_name: my-jenkins-3
+    container_name: my-jenkins-2
     volumes:
-      - /Users/praveensingampalli/Documents/BOOTCAMP2_FINAL/docker/jenkins_data:/var/jenkins_home
+      - E:/shiva/jenkins_data:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
-
